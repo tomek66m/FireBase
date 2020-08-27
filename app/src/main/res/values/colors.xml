@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="headerBackgroundGreen">#049557</color>
+    <color name="headerTextWhite">#FFFFFF</color>
+    <color name="headerRoundedWhite">#F5F5F5</color>
+    <color name="gray">#F3F3F3</color>
+    <color name="buttonColor">#05B217</color>
+    <color name="textViewColor">#DADADA</color>
+    <color name="backgroundColor">#E2F9CC</color>
+    <color name="buttonIncommingMessagesColor">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChattingActivity">-->
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/backgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/headerBackgroundGreen"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ChatPersonNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Person name"
+            android:textColor="@color/headerTextWhite"
+            android:textSize="30sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.0"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/MessagesScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/MessagesLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/messageContentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="Type a message"
+                android:background="@drawable/textview_rounded"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/SendMessageButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@drawable/btn_rounded"
+                android:onClick="SendMessage"
+                android:text="Send"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+</LinearLayout>
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
